@@ -1,0 +1,22 @@
+
+{% block body %}
+
+    <div class="container">
+        <h1 class="text-center text-success">LOGIN</h1>
+        <form method="post"  action="{{ url_for('login_admin') }}" >
+            <div class="form-group">
+                <input type="text" placeholder="Username..."
+                       name="username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password..."
+                       name="password" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login"
+                       class="btn btn-danger" />
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
